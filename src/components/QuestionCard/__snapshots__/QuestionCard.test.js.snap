@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders question in initial state 1`] = `
+<div>
+  <div
+    class="ui segment"
+  >
+    <form
+      class="ui form"
+    >
+      <div
+        class="required field"
+      >
+        <label
+          class="sc-AxjAm iLMcqR"
+        >
+          Write a lambda function to fetch data from a DynamoDB and a relational DB. Upload your code in your GitHub account and share URL of the repository to validate the code. Try to use dynamic configurations and using Serverless framework is mandatory.
+        </label>
+        <div
+          class="field sc-AxirZ gvygHu"
+        >
+          <div
+            class="ui input"
+          >
+            <input
+              placeholder="Your answer"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`renders question with value and error 1`] = `
+<div>
+  <div
+    class="ui segment"
+  >
+    <form
+      class="ui form"
+    >
+      <div
+        class="required field"
+      >
+        <label
+          class="sc-AxjAm iLMcqR"
+        >
+          Write a lambda function to fetch data from a DynamoDB and a relational DB. Upload your code in your GitHub account and share URL of the repository to validate the code. Try to use dynamic configurations and using Serverless framework is mandatory.
+        </label>
+        <div
+          class="error field sc-AxirZ gvygHu"
+        >
+          <div
+            class="ui input"
+          >
+            <input
+              aria-invalid="true"
+              placeholder="Your answer"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;

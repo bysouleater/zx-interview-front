@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders empty list 1`] = `
+<div>
+  <div />
+</div>
+`;
+
+exports[`renders questions 1`] = `
+<div>
+  <div>
+    <div
+      class="ui segment"
+    >
+      <form
+        class="ui form"
+      >
+        <div
+          class="field"
+        >
+          <label
+            class="sc-AxjAm iLMcqR"
+          />
+          <div
+            class="field sc-AxirZ gvygHu"
+          >
+            <div
+              class="ui input"
+            >
+              <input
+                placeholder="Your answer"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      class="ui segment"
+    >
+      <form
+        class="ui form"
+      >
+        <div
+          class="field"
+        >
+          <label
+            class="sc-AxjAm iLMcqR"
+          />
+          <div
+            class="field sc-AxirZ gvygHu"
+          >
+            <div
+              class="ui input"
+            >
+              <input
+                placeholder="Your answer"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

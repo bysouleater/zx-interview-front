@@ -8,7 +8,7 @@ import moment from 'moment';
  * @param {*} question Question object that contains the checks we need to apply
  */
 const isValidAnswer = (answer, question) => {
-  if (question.required && !answer) return false;
+  if (!answer) return !question.required;
   if (question.type === 'number' && isNaN(answer)) return false;
   if (question.type === 'date' && !moment(answer).isValid()) return false;
 

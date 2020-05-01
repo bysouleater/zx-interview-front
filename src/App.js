@@ -20,8 +20,7 @@ const App = () => {
   const loadQuestions = async () => {
     setLoading(true);
     try {
-      // const { data: { questions: retrievedQuestions } } = await QuestionsAPI.getQuestions();
-      const { data: { questions: retrievedQuestions } } = QuestionsAPI.getQuestions();
+      const { data: { questions: retrievedQuestions } } = await QuestionsAPI.getQuestions();
       setQuestions(retrievedQuestions);
     } catch (e) {
       setNetworkError('Sorry! Could not retrieve questions. Please try again');
