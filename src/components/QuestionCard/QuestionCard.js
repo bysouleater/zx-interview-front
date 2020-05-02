@@ -12,7 +12,7 @@ const QuestionCard = ({ question, setAnswerValue }) => (
           placeholder="Your answer"
           type={question.type}
           error={question.hasError}
-          value={question.value}
+          value={question.answer || ''}
           onChange={(e, data) => setAnswerValue(question.id, data.value)}
         />
       </Form.Field>
@@ -27,7 +27,7 @@ QuestionCard.propTypes = {
     required: PropTypes.bool,
     type: PropTypes.oneOf(['text', 'number', 'date']),
     hasError: PropTypes.bool,
-    value: PropTypes.string,
+    answer: PropTypes.string,
   }).isRequired,
   setAnswerValue: PropTypes.func.isRequired,
 };
