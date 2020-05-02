@@ -13,6 +13,7 @@ const App = () => {
   const [questions, setQuestions] = useState([]);
   const [canSave, setCanSave] = useState(false);
   const [networkError, setNetworkError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   /**
    * Load questions from backend
@@ -58,6 +59,7 @@ const App = () => {
     try {
       await QuestionsAPI.saveAnswers(questions);
       await loadQuestions();
+      setSuccessMessage('Thanks for your answers!');
     } catch (e) {
       setNetworkError('Sorry! Could not save answers. Please try again');
     } finally {
@@ -77,6 +79,11 @@ const App = () => {
       {networkError && (
         <Message negative>
           <Message.Header>{networkError}</Message.Header>
+        </Message>
+      )}
+      {successMessage && (
+        <Message success>
+          <Message.Header>{successMessage}</Message.Header>
         </Message>
       )}
       <QuestionsList questions={questions} setAnswerValue={setAnswerValue} />
