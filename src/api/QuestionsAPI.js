@@ -1,6 +1,6 @@
 import Axios from 'axios';
 
-const BASE_URL = 'http://....';
+const BASE_URL = 'https://us-central1-zx-interview-exercise.cloudfunctions.net/api';
 
 /**
  * Calls backend service to retrieve the corresponding questions

@@ -3,7 +3,7 @@ import QuestionsAPI from './QuestionsAPI';
 
 jest.mock('axios');
 
-const BASE_URL = 'http://....';
+const BASE_URL = 'https://us-central1-zx-interview-exercise.cloudfunctions.net/api';
 
 test('call getQuestions', async () => {
   const response = {
